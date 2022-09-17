@@ -1,4 +1,4 @@
-#8bit input & 4bit output sign magnitude adder
+**8bit input & 4bit output sign magnitude adder**
 
 **How it works?**
 It takes 8bit input for instance 0001_0010 and separates the one 8bit input to two 4 inputs. in this case the MSB of each 4 input indicates the sign of the binary number. If the sign bit is "0" it means the number is positive (+), and if the sign bit is "1", the number is negative (-). 
