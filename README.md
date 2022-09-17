@@ -8,3 +8,7 @@ First input a   = 0010 = +2 in decimal
 Second input b  = 1011 = -3 in decimal
 
 Sign Magnitude python code adds these two signed binary numbers and it takes cares of the -0 and the overflow that occures in between the output data. 
+
+
+**NOTE**
+Text output file for the 16bit input SMAdder is around 65K line of text, which can be used as ROM. It would take some time to open the file because of it's size. 
