@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "sync_rom_8bit_tb_behav" "xil_defaultlib.sync_rom_8bit_tb" -log "elaborate.log" 

@@ -1,0 +1,205 @@
+#-----------------------------------------------------------
+# Vivado v2022.1.2 (64-bit)
+# SW Build 3605665 on Fri Aug  5 22:52:02 MDT 2022
+# IP Build 3603185 on Sat Aug  6 04:07:44 MDT 2022
+# Start of session at: Mon Sep 19 11:34:29 2022
+# Process ID: 10116
+# Current directory: /home/Vedi/school/ECE 524L/fa22-e524-lab2-vedi97/hardware/part1/part1_proj/part1_proj/part1_proj.runs/synth_1
+# Command line: vivado -log sync_rom_16bit.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sync_rom_16bit.tcl
+# Log file: /home/Vedi/school/ECE 524L/fa22-e524-lab2-vedi97/hardware/part1/part1_proj/part1_proj/part1_proj.runs/synth_1/sync_rom_16bit.vds
+# Journal file: /home/Vedi/school/ECE 524L/fa22-e524-lab2-vedi97/hardware/part1/part1_proj/part1_proj/part1_proj.runs/synth_1/vivado.jou
+# Running On: localhost.localdomain, OS: Linux, CPU Frequency: 2999.829 MHz, CPU Physical cores: 2, Host memory: 16529 MB
+#-----------------------------------------------------------
+source sync_rom_16bit.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3018.180 ; gain = 2.020 ; free physical = 3031 ; free virtual = 8838
+Command: synth_design -top sync_rom_16bit -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10143
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3018.180 ; gain = 0.000 ; free physical = 2647 ; free virtual = 8446
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sync_rom_16bit' [/home/Vedi/school/ECE 524L/fa22-e524-lab2-vedi97/hardware/part1/src/sync_rom_16bit.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'sync_rom_16bit' (0#1) [/home/Vedi/school/ECE 524L/fa22-e524-lab2-vedi97/hardware/part1/src/sync_rom_16bit.vhd:18]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:48 ; elapsed = 00:01:09 . Memory (MB): peak = 3018.184 ; gain = 0.004 ; free physical = 2771 ; free virtual = 8572
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:49 ; elapsed = 00:01:10 . Memory (MB): peak = 3018.184 ; gain = 0.004 ; free physical = 2635 ; free virtual = 8446
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:49 ; elapsed = 00:01:10 . Memory (MB): peak = 3026.184 ; gain = 8.004 ; free physical = 2631 ; free virtual = 8442
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:52 ; elapsed = 00:01:11 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2612 ; free virtual = 8422
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                    ROMs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:20 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2243 ; free virtual = 8065
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+------------+---------------+----------------+
+|Module Name    | RTL Object | Depth x Width | Implemented As | 
++---------------+------------+---------------+----------------+
+|sync_rom_16bit | data_reg   | 65536x8       | Block RAM      | 
++---------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:20 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2126 ; free virtual = 7948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance data_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance data_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance data_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance data_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance data_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance data_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance data_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance data_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:21 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2327 ; free virtual = 8149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2071 ; free virtual = 7881
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2071 ; free virtual = 7881
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2070 ; free virtual = 7880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2068 ; free virtual = 7878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2061 ; free virtual = 7871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2060 ; free virtual = 7870
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |RAMB36E1 |    16|
+|3     |IBUF     |    17|
+|4     |OBUF     |     8|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    42|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2055 ; free virtual = 7865
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2042 ; free virtual = 7851
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:28 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2042 ; free virtual = 7851
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3026.191 ; gain = 0.000 ; free physical = 1976 ; free virtual = 7786
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3026.191 ; gain = 0.000 ; free physical = 2350 ; free virtual = 8195
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b89f4464
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 3026.191 ; gain = 8.012 ; free physical = 2481 ; free virtual = 8326
+INFO: [Common 17-1381] The checkpoint '/home/Vedi/school/ECE 524L/fa22-e524-lab2-vedi97/hardware/part1/part1_proj/part1_proj/part1_proj.runs/synth_1/sync_rom_16bit.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sync_rom_16bit_utilization_synth.rpt -pb sync_rom_16bit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 19 11:36:14 2022...
